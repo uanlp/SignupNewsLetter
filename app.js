@@ -18,8 +18,8 @@ app.get("/", function (req, res) {
 });
 
 client.setConfig({
-  apiKey: "3ed82191a02c86a8c8dafa51c4309e46-us7",
-  server: "us7",
+  apiKey: "YOUR API KEY",
+  server: "YOUR SERVER",
 });
 
 app.post("/", function (req, res) {
@@ -34,7 +34,7 @@ app.post("/", function (req, res) {
   };
 
   const run = async () => {
-    const response = await client.lists.addListMember("3c8e8e66c6", {
+    const response = await client.lists.addListMember("YOUR LIST ID", {
       email_address: subscribingUser.email,
       status: "subscribed",
       merge_fields: {
